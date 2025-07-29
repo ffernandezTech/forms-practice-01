@@ -3,13 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>forms</title>
+    
+    <title>Speaker Submission</title>
+
+    <link rel="stylesheet" href="style.css"/>
+
 </head>
 <body>
     
+    <header>
+        <h1 class="header-title"> Speaker Submission</h1>
+        <p class="header-paragraph"> Want to speak at our fake conference? Fill out this form</p>
+    </header>
+
+    <section class="Purchase-details">
+
+        <div class="name-field">
+            <label for="user_name" > Name</label>
+            <input type="text" id="user_name" name=" user-name" ></input>
+        </div>
+        <div class="email-field">
+            <label for="user_email"> Email</label>
+            <input type="email" placeholder="you@example" name="user-email" id="user_email">
+        </div>
+
+        <div class="rdbtns">
+            <label>Type of Talk</label>
+            <input type="radio" name="Stage-btn" id="rdoMain-stage">
+            <label for="rdoMain-stage"> Main Stage</label>
+            <input type="radio" name="Stage-btn" id="rdoWorkshop">
+            <label for="rdoWorkshop">Workshop</label>
+        </div>
+
+        <div class="T-shirt-Size-field">
+            <label>T-Shirt Size</label>
+            <select id="Shirt-sizes" name="Size">
+                <option value="Extra Small Size">Extra Small Size</option>
+                <option value=" Small Size"> Small Size</option>
+                <option value="Medium Size">Medium Size</option>
+                <option value="Large Size">Large Size</option>
+            </select>
+        </div>
+
+        <div class="Abstract-textfield">
+            <label for="extra-details">Abstract</label>
+            <textarea id="extra-details" name="more-info"></textarea>
+            <p class="Abstract_desc"> Describe your talk in 500 words or less</p>
+
+        </div>
+        <div class="availability-chkbox">
+            <input type="checkbox" id="availability-chk" name="availability">
+            <label for="availability-chk"> I'm actually available the date of the talk</label>
+        </div>
+        <button type="submit"> Submit</button>
+    </section>
 
 
 
-    
 </body>
 </html>
