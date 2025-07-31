@@ -22,7 +22,7 @@ body{
 header, section{
 
     border:  2px gray solid;
-    width: 55%;
+    width: min(500px, 100vw - 15%);
     text-align: center;
     background-color: white;
 }
